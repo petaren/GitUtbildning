@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,8 +22,11 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated: animated)
+        super.viewDidAppear(animated)
     }
 
+    @IBAction func buttonClick(sender: AnyObject) {
+        self.imageView.image = nil
+    }
 }
 

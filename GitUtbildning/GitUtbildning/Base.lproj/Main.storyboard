@@ -22,15 +22,29 @@
                                     <constraint firstAttribute="width" constant="310" id="Hdx-iy-eJx"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMX-qi-8CG">
+                                <rect key="frame" x="165" y="512" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrI-8d-FdQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aMX-qi-8CG" firstAttribute="centerX" secondItem="Dcw-Ch-5JZ" secondAttribute="centerX" id="8JB-TV-Qs6"/>
                             <constraint firstItem="Dcw-Ch-5JZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="111" id="Uom-DX-jyR"/>
                             <constraint firstItem="Dcw-Ch-5JZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WfY-gX-zWa"/>
+                            <constraint firstItem="aMX-qi-8CG" firstAttribute="top" secondItem="Dcw-Ch-5JZ" secondAttribute="bottom" constant="-24" id="sNX-eG-3iy"/>
                             <constraint firstItem="Dcw-Ch-5JZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="txe-SJ-v0U"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="Dcw-Ch-5JZ" id="0Gt-HF-VcD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
